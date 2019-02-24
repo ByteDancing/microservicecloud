@@ -2,6 +2,7 @@ package com.union;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Description
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2019/2/23 12:21
  */
 @SpringBootApplication
+@EnableEurekaClient     //本服务启动后，会自动注册进eureka服务中
 public class DeptProvider8001Application {
 
     public static void main(String[] args) {

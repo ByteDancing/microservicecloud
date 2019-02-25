@@ -12,7 +12,7 @@
 ####    五、
 
 ####    六、
-#####   Eureka集群高可用配置
+#####   1> Eureka集群高可用配置
 1,修改host文件-映射  
  
     `127.0.0.1       eureka7001.com
@@ -45,8 +45,29 @@
     访问，其余eureka7001.com，eureka7002.com均可见
     http://eureka7003.com:7003/
 
-
-####    七、
-
+#####   2>eureka和zookeeper的对比
+   
+   传统的ACID
+   
+    A(Atomistic):原子性
+    C(Consistency):一致性
+    I(Isolation):独立性
+    D(Durability):持久性
+    
+   经典的CAP
+   
+   `C：强一致性
+   A：可用性
+   P：分区一致性
+   `
+   
+   zookeeper保证的是CP
+   Eureka保证的是AP
+    
+    
+    
+####    六、Ribbon负载均衡
+Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
+    主要功能是提供**客户端软件负载均衡的算法**
 
 

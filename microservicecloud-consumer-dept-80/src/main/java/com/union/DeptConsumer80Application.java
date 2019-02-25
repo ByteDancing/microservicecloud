@@ -2,6 +2,7 @@ package com.union;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Description
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2019/2/23 14:42
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class DeptConsumer80Application {
 
     public static void main(String[] args) {

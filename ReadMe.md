@@ -71,3 +71,5 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
     主要功能是提供**客户端软件负载均衡的算法**
 
 
+#### 七、Feign负载均衡
+    Feign是通过接口的方式调用Rest服务（之前是Ribbon+RestTemplate）

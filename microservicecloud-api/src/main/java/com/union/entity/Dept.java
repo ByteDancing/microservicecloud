@@ -2,6 +2,7 @@ package com.union.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
  */
 @Data
 @NoArgsConstructor
+@Accessors(chain=true)
 public class Dept implements Serializable{
     private static final long serialVersionUID = 8718234646694126456L;
     private Long 	deptno; // 主键

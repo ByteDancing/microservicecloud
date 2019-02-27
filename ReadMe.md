@@ -73,3 +73,9 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
 
 #### 七、Feign负载均衡
     Feign是通过接口的方式调用Rest服务（之前是Ribbon+RestTemplate）
+    
+####    八、Hystrix断路器
+    Hystrix是一个处理分布式系统的延迟和容错的开开源库，在分布式系统里，许多依赖不可避免的
+    调用失败，比如超时，异常；
+    而Hystrix能够保证一个依赖出现问题后，不会使整个微服务失败，避免级联故障；以提高分布式的弹性
+    

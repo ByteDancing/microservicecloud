@@ -83,4 +83,13 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
     
 ####    九、Zuul路由网关
     zuul与eureka组合，自身注册为Eureka服务治理下的应用，其他的微服务访问通过Zuul跳转后获得；
-    
+    `
+    #配置规则
+    zuul: 
+       #ignored-services: microservicecloud-dept
+       prefix: /atguigu         #设置前缀
+       ignored-services: "*"    #隐藏所有
+       routes: 
+         mydept.serviceId: microservicecloud-dept
+         mydept.path: /mydept/**
+    `

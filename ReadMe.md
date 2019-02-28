@@ -79,3 +79,8 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
     调用失败，比如超时，异常；
     而Hystrix能够保证一个依赖出现问题后，不会使整个微服务失败，避免级联故障；以提高分布式的弹性
     
+    
+    
+####    九、Zuul路由网关
+    zuul与eureka组合，自身注册为Eureka服务治理下的应用，其他的微服务访问通过Zuul跳转后获得；
+    

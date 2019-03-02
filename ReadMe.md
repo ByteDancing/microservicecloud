@@ -93,3 +93,4 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
          mydept.serviceId: microservicecloud-dept
          mydept.path: /mydept/**
     `
+####    十、Springcloud config配置管理

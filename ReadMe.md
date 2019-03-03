@@ -94,3 +94,8 @@ Spring Cloud Ribbon是基于Netflix Ribbon的**客户端** 负载均衡工具；
          mydept.path: /mydept/**
     `
 ####    十、Springcloud config配置管理
+
+springCloud Config 分为客户端和服务端两个部分；
+服务端也成为分布式配置中心，他是一个独立的微服务应用，用来连接配置服务器并为客户端提供配置信息，加密解密信息等访问接口；
+
+客户端则是通过指定的配置中心来管理应用资源，以及与业务相关的配置内容 

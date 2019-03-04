@@ -1,0 +1,18 @@
+spring:
+  profile:
+    active:
+      -dev
+
+
+---
+spring:
+  profiles:
+    application:
+      name: microservercloud-dev
+
+ ---
+ spring:
+   profiles:
+     application:
+       name: microservercloud-test
+
